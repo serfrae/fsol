@@ -1,0 +1,19 @@
+[package]
+name = "fsol"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.89"
+bs58 = "0.5.1"
+clap = { version = "4.5.20", features = ["derive", "cargo"] }
+solana-cli-config = "2.0.13"
+solana-client = "2.0.13"
+solana-sdk = "2.0.13"
+spl-associated-token-account = "5.0.1"
+spl-token = "6.0.0"
+spl-token-2022 = "5.0.2"
+
+[[bin]]
+name = "fsol"
+path = "src/main.rs"
